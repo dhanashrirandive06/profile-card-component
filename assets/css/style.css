@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../../images/bg-pattern-top.svg) left top no-repeat,
+    url(../../images/bg-pattern-bottom.svg) right bottom no-repeat;
+  background-color: hsl(185, 75%, 39%);
+  background-position: -40% 260%, 144% -327%;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: white;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.container__heading--sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container__img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+
+.container__profileImg {
+  border-radius: 50%;
+  position: relative;
+  top: -3rem;
+  border: 7px solid white;
+}
+
+.profile__name {
+  margin: 0;
+  /* font-size: 1rem; */
+  margin-top: -2rem;
+}
+
+.profile__name-t{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile_span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+.container__text{
+    color:hsl(227, 10%, 46%) ;
+    margin: 0.5rem 0 1rem 0;   
+}
+
+#hr{
+    border:0.01px solid hsla(227, 10%, 46%, 0.218);
+    width: 100%;
+    margin: 1rem;
+}
+
+.container__social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.social-heading{
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 0;
+}
+
+.social-para{
+    color: hsl(227, 10%, 46%);
+    margin: 0.2rem 0 2rem 0;
+    letter-spacing: 0.1rem;
+    font-size: 0.88rem;
+}
+
+
+/* Media query For responsive design */
+@media (max-width: 1400px){
+  body{
+    background-position: -40% 260%, 144% -327%;
+  }
+    .container {
+        width: 30%;
+      }
+}
+
+@media (max-width: 1200px){
+  body{
+    background-position: -200% 450%, 200% -300%;
+  }
+    .container {
+        width: 50%;
+      }
+}
+
+@media (max-width: 992px){
+  body{
+    background-position: -2500% -1200%, 2550%  1185%;
+  }
+    .container {
+        width: 70%;
+      }
+}
+
+@media (max-width: 768px){
+  body{
+    background-position: 230% 180%, -100% -200%;
+  }
+    .container {
+        width: 80%;
+      }
+}
+
+@media (max-width: 576px){
+  body{
+    background-position: 166% 230%, -50% -175%;
+  }
+    .container {
+        width: 90%;
+      }
+}
+
+@media (max-width: 380px){
+  body{
+    background-position: 120% 263%, -19% -172%;
+  }
+
+}
